@@ -1,0 +1,30 @@
+Database name - banddatabase
+
+Table Band
+-----
+CREATE TABLE `band` (
+  `id` int NOT NULL,
+  `nameAdjective` varchar(45) NOT NULL,
+  `nameNoun` varchar(45) NOT NULL,
+  `drummer` varchar(45) NOT NULL,
+  `vocalist` varchar(45) NOT NULL,
+  `bassGuitarist` varchar(45) NOT NULL,
+  `electricGuitarist` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+Table noun
+----
+CREATE TABLE `noun` (
+  `id` int NOT NULL,
+  `noun` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+Table adjective
+----
+CREATE TABLE `adjective` (
+  `id` int NOT NULL,
+  `adjective` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
